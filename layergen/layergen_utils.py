@@ -38,7 +38,7 @@ def generate_file(name: str, output_dir: str, env: jinja2.Environment,
         subprocess.call(['gofmt', '-w', output_path])
     elif (output_path.endswith('.h') or output_path.endswith('.cpp') or
           output_path.endswith('.cc')):
-        subprocess.call(['clang-format', '-i', '-style=file', output_path])
+        subprocess.call(['clang-format', '-i', '-style=Google', output_path])
 
 
 def generate_manifest_file(manifest_name: str, output_dir: str,

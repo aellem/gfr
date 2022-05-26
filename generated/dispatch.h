@@ -25,7 +25,6 @@
 namespace GFR {
 
 struct InstanceDispatchTable {
-
   PFN_vkGetPhysicalDeviceDisplayPropertiesKHR
       GetPhysicalDeviceDisplayPropertiesKHR;
   PFN_vkGetPhysicalDeviceDisplayPlanePropertiesKHR
@@ -130,11 +129,10 @@ struct InstanceDispatchTable {
 #ifdef VK_USE_PLATFORM_GGP
   PFN_vkCreateStreamDescriptorSurfaceGGP CreateStreamDescriptorSurfaceGGP;
 
-#endif // VK_USE_PLATFORM_GGP
+#endif  // VK_USE_PLATFORM_GGP
 };
 
 struct DeviceDispatchTable {
-
   PFN_vkResetQueryPool ResetQueryPool;
   PFN_vkResetQueryPoolEXT ResetQueryPoolEXT;
   PFN_vkCmdDrawMultiEXT CmdDrawMultiEXT;
@@ -452,7 +450,7 @@ struct DeviceDispatchTable {
 
 #ifdef VK_USE_PLATFORM_GGP
 
-#endif // VK_USE_PLATFORM_GGP
+#endif  // VK_USE_PLATFORM_GGP
 };
 
 void InitInstanceDispatchTable(VkInstance instance,
@@ -461,6 +459,6 @@ void InitInstanceDispatchTable(VkInstance instance,
 void InitDeviceDispatchTable(VkDevice device, PFN_vkGetDeviceProcAddr pa,
                              DeviceDispatchTable *dt);
 
-} // namespace GFR
+}  // namespace GFR
 
-#endif // DISPATCH_H
+#endif  // DISPATCH_H
