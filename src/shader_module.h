@@ -18,13 +18,7 @@
 #define GFR_SHADER_MODULE_H
 
 #include <vulkan/vulkan.h>
-
-#ifdef WIN32
-#include <spirv-headers/spirv.hpp>
-#else
-#include <SPIRV/spirv.hpp>
-#endif
-
+#include <spirv/1.2/spirv.hpp>
 #include <memory>
 #include <string>
 #include <vector>

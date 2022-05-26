@@ -20,12 +20,7 @@
 #include <cassert>
 #include <cstdint>
 #include <map>
-
-#ifdef WIN32
-#include <spirv-headers/spirv.hpp>
-#else
-#include <SPIRV/spirv.hpp>
-#endif
+#include <spirv/1.2/spirv.hpp>
 
 namespace GFR {
 
